@@ -12,6 +12,7 @@
   <body>
     <div id="main_part">
       <div id="signup">
+        <h1 id="title"></h1>
         <form action="" method="post">
           <div id="input">
             <input type="text" name="u_name" placeholder="Enter Your Name" />
@@ -39,9 +40,34 @@
           <div id="input">
             <input type="tel" name="u_phone" placeholder="Enter Your Phone Number" />
           </div>
-        </form>
+          <div id="input">
+            <input type="date" name="u_dob" placeholder="Enter Your Date Of Birth" onfocus="this.type='date'" />
+          </div>
+          <div id="input">
+            <select name="u_country" id="">
+              <option value="">Select Your Country</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Palestine">Palestine</option>
+                </select>
+              </div>
+              <input id="btn" type="submit" name="signup" value="Signup">
+              <input id="btn" type="reset" value="Reset">
+            </form>
+          </div>
+          
+      <div id="login">
+        <h1 id="title"></h1>
+        <div id="input">
+          <input type="email" name="u_email" placeholder="Enter Your Email" />
+        </div>
+        <div id="input">
+          <input type="password" name="u_pass1" placeholder="Enter Your Password" />
+        </div>
+        <input id="btn" type="submit" name="Login" value="Login">
+        <input id="btn" type="reset" value="Reset">
+        <center><p id="for_pass">Forgot Password?</p></center>
       </div>
-      <div id="login"></div>
     </div>
   </body>
 
