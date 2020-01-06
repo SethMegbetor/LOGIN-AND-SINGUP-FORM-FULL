@@ -1,7 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-image: url("/IMAGES/mbp.jpg");
   background-repeat: no-repeat;
@@ -26,12 +27,21 @@ body {
   height: 550px;
 }
 
-#title{
-  width: 40%;
+#title {
+  width: 38%;
   border-radius: 100%;
   margin: -22% auto 8% auto;
   height: 120px;
   background: #000;
+  text-align-last: center;
+  /* To change to color of the title icon, use the code below */
+  color: #0c9;
+}
+
+
+#title i {
+  line-height: 110px;
+  font-size: 40px;
 }
 
 #login {
@@ -52,24 +62,32 @@ body {
   margin: 2%;
 }
 
+#input i {
+  width: 10%;
+  line-height: 35px;
+  text-align: right;
+  /* To change the color of the icons add the code below*/
+  color: #0c9;
+}
+
 #input input {
-  width: 90%;
+  width: 80%;
   height: 35px;
   background: none;
   outline: none;
   border-width: 0px;
-  padding-left: 5%;
+  padding-left: 2%;
   box-sizing: border-box;
 }
 
 #input select {
-  margin-left: 5%;
+  /* margin-left: 5%; */
   border: 1px solid #ccc;
-  width: 90%;
+  width: 80%;
   height: 35px;
   background: none;
   outline: none;
-  padding-left: 5%;
+  padding-left: 1%;
   box-sizing: border-box;
 }
 
@@ -91,4 +109,4 @@ body {
 #for_pass {
   margin-top: 5%;
   cursor: pointer;
-} 
+}

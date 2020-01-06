@@ -7,29 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SECURE LOGIN FORM</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.css">
   </head>
 
   <body>
     <div id="main_part">
       <div id="signup">
-        <h1 id="title"></h1>
+        <h1 id="title"> <i class="fas fa-user-plus"></i></h1>
         <form action="" method="post">
           <div id="input">
+            <i class="far fa-user"></i>
             <input type="text" name="u_name" placeholder="Enter Your Name" />
           </div>
           <div id="input">
+            <i class="fas fa-envelope"></i>
             <input type="email" name="u_email" placeholder="Enter Your Email" />
           </div>
           <div id="input">
+            <i class="fas fa-lock"></i>
             <input type="password" name="u_pass1" placeholder="Enter Your Password" />
           </div>
           <div id="input">
+            <i class="fas fa-lock"></i>
             <input type="password" name="u_pass2" placeholder="Re-Enter Your Password" />
           </div>
           <div id="input">
+            <i class="fas fa-phone-square"></i>
             <input type="tel" name="u_phone" placeholder="Enter Your Phone Number" />
           </div>
           <div id="input">
+            <i class="fas fa-users"></i>
             <select name="u_gen" id="">
               <option value="">Select Your Gender</option>
               <option value="Male">Male</option>
@@ -38,35 +45,38 @@
             </select>
           </div>
           <div id="input">
-            <input type="tel" name="u_phone" placeholder="Enter Your Phone Number" />
+            <i class="fas fa-calendar-week"></i>
+            <input type="text" name="u_dob" placeholder="Enter Your Date Of Birth" onfocus="this.type='date'" />
           </div>
           <div id="input">
-            <input type="date" name="u_dob" placeholder="Enter Your Date Of Birth" onfocus="this.type='date'" />
-          </div>
-          <div id="input">
+            <i class="fas fa-globe"></i>
             <select name="u_country" id="">
               <option value="">Select Your Country</option>
               <option value="Iraq">Iraq</option>
               <option value="Afghanistan">Afghanistan</option>
               <option value="Palestine">Palestine</option>
-                </select>
-              </div>
-              <input id="btn" type="submit" name="signup" value="Signup">
-              <input id="btn" type="reset" value="Reset">
-            </form>
+            </select>
           </div>
-          
+          <input id="btn" type="submit" name="signup" value="Signup">
+          <input id="btn" type="reset" value="Reset">
+        </form>
+      </div>
+
       <div id="login">
-        <h1 id="title"></h1>
+        <h1 id="title"><i class="far fa-user"></i></h1>
         <div id="input">
+          <i class="fas fa-envelope"></i>
           <input type="email" name="u_email" placeholder="Enter Your Email" />
         </div>
         <div id="input">
+          <i class="fas fa-lock"></i>
           <input type="password" name="u_pass1" placeholder="Enter Your Password" />
         </div>
         <input id="btn" type="submit" name="Login" value="Login">
         <input id="btn" type="reset" value="Reset">
-        <center><p id="for_pass">Forgot Password?</p></center>
+        <center>
+          <p id="for_pass">Forgot Password?</p>
+        </center>
       </div>
     </div>
   </body>
