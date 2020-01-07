@@ -10,6 +10,19 @@
     <title>SECURE LOGIN FORM</title>
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.css">
+    <script src="/JS/jquery-3.4.1.js"></script>
+    <script>
+    $ (document).ready(function() {
+      $('#for_pass').click(function() {
+        $('#for_pass').text('Forgot Password Form');
+        $('#for_pop').fadeIn(200);
+      }) 
+      $('.close').click(function(){
+        $('#for_pass').text('Forgot Password?');
+        $('#for_pop').fadeOut(200)
+      })
+    });
+    </script> 
   </head>
 
   <body>
@@ -24,8 +37,8 @@
           </div>
           <div id="input">
             <i class="fas fa-envelope"></i>
-            <input type="email" name="u_email" required="required" pattern="[a-z A-Z ^@._]{10,50}" minlength="10" maxlength='50'
-              placeholder="Enter Your Email" />
+            <input type="email" name="u_email" required="required" pattern="[a-z A-Z ^@._]{10,50}" minlength="10"
+              maxlength='50' placeholder="Enter Your Email" />
           </div>
           <div id="input">
             <i class="fas fa-lock"></i>
@@ -85,7 +98,16 @@
         <input id="btn" type="reset" value="Reset">
         <center>
           <p id="for_pass">Forgot Password?</p>
-        </center>
+        </center><br>
+        <div id="for_pop">
+          <div id="input">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="for_email" required="required" pattern="[a-z A-Z ^@._]{10,50}"
+              placeholder="Enter Your Email" />
+          </div>
+          <input id="btn" type="submit" name="send" value="Send">
+          <input id="btn" class="close" type="button" value="Close">
+        </div>
       </div>
       </form>
     </div>

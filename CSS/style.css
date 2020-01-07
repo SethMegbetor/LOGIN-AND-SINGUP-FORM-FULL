@@ -12,6 +12,9 @@ body {
   background-attachment: fixed;
 }
 
+#for_pop{
+  display: none;
+}
 
 /* Adding media queries */
 @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -46,7 +49,6 @@ body {
     /* To change to color of the title icon, use the code below */
     color: #0c9;
   }
-
 
   #title i {
     line-height: 110px;
