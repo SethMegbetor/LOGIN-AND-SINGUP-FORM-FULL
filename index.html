@@ -19,27 +19,32 @@
         <form action="" method="post">
           <div id="input">
             <i class="far fa-user"></i>
-            <input type="text" name="u_name" placeholder="Enter Your Name" />
+            <input type="text" name="u_name" required="required" pattern="[a-z A-Z]{5,30}" maxlength='30'
+              placeholder="Enter Your Name" />
           </div>
           <div id="input">
             <i class="fas fa-envelope"></i>
-            <input type="email" name="u_email" placeholder="Enter Your Email" />
+            <input type="email" name="u_email" required="required" pattern="[a-z A-Z ^@._]{10,50}" minlength="10" maxlength='50'
+              placeholder="Enter Your Email" />
           </div>
           <div id="input">
             <i class="fas fa-lock"></i>
-            <input type="password" name="u_pass1" placeholder="Enter Your Password" />
+            <input type="password" name="u_pass1" required="required" minlength="8" maxlength="20"
+              placeholder="Enter Your Password" />
           </div>
           <div id="input">
             <i class="fas fa-lock"></i>
-            <input type="password" name="u_pass2" placeholder="Re-Enter Your Password" />
+            <input type="password" name="u_pass2" required="required" minlength="8" maxlength="20"
+              placeholder="Re-Enter Your Password" />
           </div>
           <div id="input">
             <i class="fas fa-phone-square"></i>
-            <input type="tel" name="u_phone" placeholder="Enter Your Phone Number" />
+            <input type="tel" name="u_phone" required="required" pattern="[0-9 ^+]{10,14}"
+              placeholder="Enter Your Phone Number" />
           </div>
           <div id="input">
             <i class="fas fa-users"></i>
-            <select name="u_gen" id="">
+            <select name="u_gen" required="required" id="">
               <option value="">Select Your Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
@@ -48,11 +53,12 @@
           </div>
           <div id="input">
             <i class="fas fa-calendar-week"></i>
-            <input type="text" name="u_dob" placeholder="Enter Your Date Of Birth" onfocus="this.type='date'" />
+            <input type="text" name="u_dob" required="required" placeholder="Enter Your Date Of Birth"
+              onfocus="this.type='date'" />
           </div>
           <div id="input">
             <i class="fas fa-globe"></i>
-            <select name="u_country" id="">
+            <select name="u_country" required="required" id="">
               <option value="">Select Your Country</option>
               <option value="Iraq">Iraq</option>
               <option value="Afghanistan">Afghanistan</option>
@@ -61,18 +67,19 @@
           </div>
           <input id="btn" type="submit" name="signup" value="Signup">
           <input id="btn" type="reset" value="Reset">
-        </form>
       </div>
 
       <div id="login">
         <h1 id="title"><i class="far fa-user"></i></h1>
         <div id="input">
           <i class="fas fa-envelope"></i>
-          <input type="email" name="u_email" placeholder="Enter Your Email" />
+          <input type="email" name="u_email" required="required" pattern="[a-z A-Z ^@._]{10,50}"
+            placeholder="Enter Your Email" />
         </div>
         <div id="input">
           <i class="fas fa-lock"></i>
-          <input type="password" name="u_pass1" placeholder="Enter Your Password" />
+          <input type="password" name="u_pass1" minlength="8" maxlength="20" required="required"
+            placeholder="Enter Your Password" />
         </div>
         <input id="btn" type="submit" name="Login" value="Login">
         <input id="btn" type="reset" value="Reset">
@@ -80,6 +87,7 @@
           <p id="for_pass">Forgot Password?</p>
         </center>
       </div>
+      </form>
     </div>
   </body>
 
