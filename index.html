@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.css">
     <script src="/JS/jquery-3.4.1.js"></script>
+    <script src="/JS/custom.js"></script>
     <script>
       $(document).ready(function () {
         $('#for_pass').click(function () {
@@ -28,8 +29,8 @@
             $('#pass_match').fadeIn(100);
           } else {
             $('#pass_match').fadeOut(100);
-            }
-            return true;         
+          }
+          return true;
         })
 
       });
@@ -42,32 +43,32 @@
         <h1 id="title"> <i class="fas fa-user-plus"></i></h1>
         <p id="pass_match">Password does not match!!!</p>
         <form action="" method="post">
-          <div id="input">
+          <div id="input" class="u_name">
             <i class="far fa-user"></i>
-            <input type="text" name="u_name" required="required" pattern="[a-z A-Z]{5,30}" maxlength='30'
+            <input type="text" name="u_name" required="required" pattern="[a-z A-Z]{5,30}" maxlength="30" minlength="4"
               placeholder="Enter Your Name" />
           </div>
-          <div id="input">
+          <div id="input" class="u_email">
             <i class="fas fa-envelope"></i>
             <input type="email" name="u_email" required="required" pattern="[a-z A-Z ^@._]{10,50}" minlength="10"
-              maxlength='50' placeholder="Enter Your Email" />
+              maxlength="50" placeholder="Enter Your Email" />
           </div>
-          <div id="input">
+          <div id="input" class="u_pass1">
             <i class="fas fa-lock"></i>
             <input type="password" id="pass1" name="u_pass1" required="required" minlength="8" maxlength="20"
               placeholder="Enter Your Password" />
           </div>
-          <div id="input">
+          <div id="input" class="u_pass2">
             <i class="fas fa-lock"></i>
             <input type="password" id="pass2" name="u_pass2" required="required" minlength="8" maxlength="20"
               placeholder="Re-Enter Your Password" />
           </div>
-          <div id="input">
+          <div id="input" class="u_phone">
             <i class="fas fa-phone-square"></i>
-            <input type="tel" name="u_phone" required="required" pattern="[0-9]{10,14}"
+            <input type="tel" name="u_phone" minlength="10" maxlength="14" required="required" pattern="[0-9 ^+]{10,14}"
               placeholder="Enter Your Phone Number" />
           </div>
-          <div id="input">
+          <div id="input" class="u_gen">
             <i class="fas fa-users"></i>
             <select name="u_gen" required="required" id="">
               <option value="">Select Your Gender</option>
@@ -76,12 +77,12 @@
               <option value="Female">Other</option>
             </select>
           </div>
-          <div id="input">
+          <div id="input" class="u_dob">
             <i class="fas fa-calendar-week"></i>
             <input type="text" name="u_dob" required="required" placeholder="Enter Your Date Of Birth"
               onfocus="this.type='date'" />
           </div>
-          <div id="input">
+          <div id="input" class="u_country">
             <i class="fas fa-globe"></i>
             <select name="u_country" required="required" id="">
               <option value="">Select Your Country</option>
@@ -90,7 +91,7 @@
               <option value="Palestine">Palestine</option>
             </select>
           </div>
-          <input id="btn" type="submit" name="signup" value="Signup">
+          <input id="btn" class="btn" type="submit" name="signup" value="Signup">
           <input id="btn" type="reset" value="Reset">
       </div>
 

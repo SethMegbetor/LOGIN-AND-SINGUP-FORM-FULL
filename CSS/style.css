@@ -78,7 +78,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -120,6 +121,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -189,7 +191,7 @@ body {
     height: 40px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
   }
 
   #input i {
@@ -231,6 +233,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -300,7 +303,7 @@ body {
     height: 40px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
   }
 
   #input i {
@@ -342,6 +345,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -411,7 +415,8 @@ body {
     height: 40px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -453,6 +458,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -529,7 +535,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -571,6 +578,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -643,7 +651,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -685,6 +694,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -757,7 +767,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -799,6 +810,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -872,7 +884,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -914,6 +927,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
@@ -955,7 +969,7 @@ body {
   #title {
     width: 40%;
     border-radius: 100%;
-    margin: -22% auto 8% auto;
+    margin: -22% auto 5% auto;
     height: 120px;
     background: rgba(0, 0, 0, 0.9);
     text-align-last: center;
@@ -986,7 +1000,8 @@ body {
     height: 35px;
     background: #fff;
     border-radius: 20px;
-    margin: 2% 0;
+    margin-bottom: 2%;
+    box-sizing: border-box;
   }
 
   #input i {
@@ -1028,6 +1043,7 @@ body {
     border-radius: 20px;
     margin-top: 5%;
     color: #fff;
+    outline: none;
   }
 
   #btn:hover {
