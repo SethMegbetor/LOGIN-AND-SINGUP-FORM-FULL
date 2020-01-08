@@ -16,6 +16,14 @@ body {
   display: none;
 }
 
+#pass_match {
+  display: none;
+  color: red;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  font-weight: bold;
+}
+
 /* Adding media queries */
 @media screen and (min-width: 320px) and (max-width: 500px) {
   #main_part {

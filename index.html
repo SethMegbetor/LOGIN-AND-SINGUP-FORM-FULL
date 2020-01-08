@@ -12,23 +12,35 @@
     <link rel="stylesheet" href="/fontawesome-free-5.12.0-web/css/all.css">
     <script src="/JS/jquery-3.4.1.js"></script>
     <script>
-    $ (document).ready(function() {
-      $('#for_pass').click(function() {
-        $('#for_pass').text('Forgot Password Form');
-        $('#for_pop').fadeIn(200);
-      }) 
-      $('.close').click(function(){
-        $('#for_pass').text('Forgot Password?');
-        $('#for_pop').fadeOut(200)
-      })
-    });
-    </script> 
+      $(document).ready(function () {
+        $('#for_pass').click(function () {
+          $('#for_pass').text('Forgot Password Form');
+          $('#for_pop').fadeIn(200);
+        })
+        $('.close').click(function () {
+          $('#for_pass').text('Forgot Password?');
+          $('#for_pop').fadeOut(200)
+        })
+
+        //code for password matching
+        $('#pass2').keyup(function () {
+          if ($('#pass1').val() != $('#pass2').val()) {
+            $('#pass_match').fadeIn(100);
+          } else {
+            $('#pass_match').fadeOut(100);
+            }
+            return true;         
+        })
+
+      });
+    </script>
   </head>
 
   <body>
     <div id="main_part">
       <div id="signup">
         <h1 id="title"> <i class="fas fa-user-plus"></i></h1>
+        <p id="pass_match">Password does not match!!!</p>
         <form action="" method="post">
           <div id="input">
             <i class="far fa-user"></i>
@@ -42,17 +54,17 @@
           </div>
           <div id="input">
             <i class="fas fa-lock"></i>
-            <input type="password" name="u_pass1" required="required" minlength="8" maxlength="20"
+            <input type="password" id="pass1" name="u_pass1" required="required" minlength="8" maxlength="20"
               placeholder="Enter Your Password" />
           </div>
           <div id="input">
             <i class="fas fa-lock"></i>
-            <input type="password" name="u_pass2" required="required" minlength="8" maxlength="20"
+            <input type="password" id="pass2" name="u_pass2" required="required" minlength="8" maxlength="20"
               placeholder="Re-Enter Your Password" />
           </div>
           <div id="input">
             <i class="fas fa-phone-square"></i>
-            <input type="tel" name="u_phone" required="required" pattern="[0-9 ^+]{10,14}"
+            <input type="tel" name="u_phone" required="required" pattern="[0-9]{10,14}"
               placeholder="Enter Your Phone Number" />
           </div>
           <div id="input">
